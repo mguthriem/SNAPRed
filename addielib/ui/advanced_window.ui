@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>939</width>
+    <height>759</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Instrument:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="instrument_comboBox"/>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>Post Processing</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QRadioButton" name="mantid_post_processing_button">
+           <property name="text">
+            <string>Mantid</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="idl_post_processing_button">
+           <property name="text">
+            <string>IDL</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Cache Dir.:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cache_dir_button">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Browse ...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="cache_dir_label">
+        <property name="text">
+         <string>N/A</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Output Dir.:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="output_dir_button">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Browse ...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="output_dir_label">
+        <property name="text">
+         <string>N/A</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="idl_config_group_box">
+      <property name="title">
+       <string>IDL Reduction Config</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QLabel" name="autonom_path_label">
+             <property name="text">
+              <string>autNOM: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="autonom_path_line_edit"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="autonom_path_browse_button">
+             <property name="text">
+              <string>Browse ...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QLabel" name="sum_scans_path_label">
+             <property name="text">
+              <string>Sum Scans: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="sum_scans_path_line_edit"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="sum_scans_path_browse_button">
+             <property name="text">
+              <string>Browse ...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="sum_scans_python_version_checkbox">
+           <property name="text">
+            <string>Use Sum Scans Python Version?</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QLabel" name="ndabs_path_label">
+             <property name="text">
+              <string>NDabs:  </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="ndabs_path_line_edit"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="ndabs_path_browse_button">
+             <property name="text">
+              <string>Browse ...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>939</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>idl_post_processing_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>post_processing_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>232</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>218</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mantid_post_processing_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>post_processing_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>232</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>instrument_comboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>instrument_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cache_dir_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>cache_dir_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>403</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>562</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>output_dir_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>output_dir_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>436</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>124</x>
+     <y>209</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>autonom_path_line_edit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>autonom_path_line_edited()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>189</x>
+     <y>612</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>209</x>
+     <y>488</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sum_scans_path_line_edit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>sum_scans_path_line_edited()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>644</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>218</x>
+     <y>515</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ndabs_path_line_edit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ndabs_path_line_edited()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>697</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>538</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>autonom_path_browse_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>autonom_path_browse_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>896</x>
+     <y>616</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>880</x>
+     <y>481</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sum_scans_path_browse_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>sum_scans_path_browse_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>857</x>
+     <y>648</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>848</x>
+     <y>504</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ndabs_path_browse_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ndabs_path_browse_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>853</x>
+     <y>709</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>812</x>
+     <y>529</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sum_scans_python_version_checkbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>sum_scans_python_version_checkbox_toggled()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>30</x>
+     <y>676</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>60</x>
+     <y>485</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>post_processing_clicked()</slot>
+  <slot>instrument_changed()</slot>
+  <slot>cache_dir_button_clicked()</slot>
+  <slot>output_dir_button_clicked()</slot>
+  <slot>add_key_value()</slot>
+  <slot>remove_key_value_selected()</slot>
+  <slot>ndabs_path_line_edited()</slot>
+  <slot>autonom_path_line_edited()</slot>
+  <slot>sum_scans_path_line_edited()</slot>
+  <slot>autonom_path_browse_button_clicked()</slot>
+  <slot>sum_scans_path_browse_button_clicked()</slot>
+  <slot>ndabs_path_browse_button_clicked()</slot>
+  <slot>sum_scans_python_version_checkbox_toggled()</slot>
+ </slots>
+</ui>

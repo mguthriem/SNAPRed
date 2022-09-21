@@ -10,7 +10,9 @@ from qtpy.QtWidgets import (
     QMainWindow,
     QTableWidgetItem,
     QWidget,
-    QFileDialog)
+    QFileDialog,
+    QGridLayout,
+    QTabWidget)
 from qtpy.uic import loadUi
 import ui
 
@@ -20,6 +22,8 @@ class MainWindow(QMainWindow):
     def __init__(self, parent=None,processing_mode=None):
 
         QMainWindow.__init__(self, parent)
+
+        self.layout = QGridLayout()
 
         self.ui = loadUi('ui/testWindow.ui',baseinstance=self)
         self.ui.runInputStr.editingFinished.connect(self.runStringEntered)
@@ -32,6 +36,12 @@ class MainWindow(QMainWindow):
         self.ui.MskOpenFileButton.setVisible(False)
         self.ui.MskLabel.setVisible(False)
         self.ui.MskFileName.setVisible(False)
+
+        self.tabwidget = QTabWidget()
+        self.tabwidget.addTab(self.ui.runInputStr,'Main')
+        self.tabwidget.addTab(self.ui.stateStatus,'Details')
+        self.layout.addWidget(self.tabwidget,0,0)
+
 
         self.rPrm = dict()
         self.sPrm = dict()
